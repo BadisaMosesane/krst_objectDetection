@@ -1,9 +1,9 @@
-# krst_objectDetection 
 
-Augmenting wildlife conservation efforts using AI
+
+# Augmenting wildlife conservation efforts using Tensorflow Object Detection API
 Case for KRST flagship project done under the UIG co-creation platform.
 
-Animal Image Classification using CNN
+# Animal Image Classification using CNN  
 
 For UIG, we want to create an image classifier using deep learning.
 
