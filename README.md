@@ -1,47 +1,46 @@
 
 
 # Augmenting wildlife conservation efforts using Tensorflow Object Detection API
-Case for KRST flagship project done under the UIG co-creation platform.
+KRST flagship project done under the UIG co-creation platform.
+Drones as a great data collection tool, coupled with Machine Learning techniques will augment our ability to study, manage and protect wildlife ecosystems and aid in combating a plethora
+of wildlife conservation challenges.
 
-# Animal Image Classification using CNN  
 
-For UIG, we want to create an image classifier using deep learning.
+**Object Detection using Neural Network and Plotly Dash**
+The goal is to use an Object detection API to identify the animal in the drone video stream.
+Classify species of animals based on images coming from drone streams. Automatically help identify animals in the wild taken by wildlife conservatories. The dashboard where the objects of interest are detected is shown below.
+![](images/krstmodel.png)
 
-Purpose:
+**Installation and Usage**
+    Install all dependencies listed in requirements.txt
+     - $ pip install -r requirements.txt
+    Run app.py to launch a local Dash server to host the Dash app. A link will appear in your console; click this to use the Dash app.
 
-Classify species of animals based on pictures. Can automatically help identify animals in the wild taken by wildlife conservatories. Can lead to discoveries of potential new habitat as well as new unseen species of animals within the same class.
-Method:
+**Method**
 
-Train images of animals from six different species with thousands of labeled pictures in a VGG16 transfer learning model using Convulational Neural Network.
-Dataset:
-
-Data came from Animals-10 dataset in kaggle. Only chose six of the available species due to computer processing limitations, as well as fixed time window to run experiment.
+Train images of animals from six different species with thousands of labeled pictures using Convulational Neural Network. Data came from Animals-10 dataset in kaggle. Only chose six of the available species due to computer processing limitations, as well as fixed time window to run experiment.
 All process and methods can be found in the Final Notebook
-Final Model:
 
-This is the final model that yielded the highest accuracy:
+**Issues**
 
-image
+The biggest issue was class imbalance. Since there were uneven numbers of pictures for each samples, this led the algorithm to train better on some categories versus the others. Second issues is we did not add any more than basic distortions in our picture.
 
-image
-
-image
-
-Our classification metrics shows that our model has relatively high precision accuracy for all our image categories, letting us know that this is a valid model:
-
-screen shot 2019-02-11 at 4 01 27 pm
-
-In addition, our confusion matrix also shows how well the model predicted for each class and how often it was wrong:
-
-image
-
-This is mainly due to class imbalance. Some categories had more pictures then others.
-Test a picture:
-
-image
-Issues:
-
-The biggest issue was class imbalance. Since there were uneven numbers of pictures for each samples, this led the algorithm to train better on some categories versus the others. Second issues is we did not add any more than basic distortions in our picture. But this led to better training as I later tested it with distorted pictures, and it was still able to correctly guess the picture. It was of a brown recluse spider with added noise.
-Conclision:
+**Conclusion**
 
 This model can excellently guess a picture of an animal if the shape of the animal is in the training method. To train it in additional animals, simply feed it labeled images (1000 at least for training and 300+ for validation). Also, just for fun, you can also give the machine a picture of a pokemon like Rapidash and it will guess it is a horse.
+
+
+**Issues**
+* improve Detection  accurary
+* train on more aerial data
+* deploy application live
+
+**Licensing**
+[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+
+**Authors**
+Badisa Mosesane 
+
+**Contributing** 
+Send us a PR at https://github.com/BadisaMosesane/krst_objectDetection
+

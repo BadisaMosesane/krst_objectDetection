@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/TF_Object_Detection2020" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/krst_web_app_model/dash-object-detection" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/models" vcs="Git" />
   </component>
 </project>
