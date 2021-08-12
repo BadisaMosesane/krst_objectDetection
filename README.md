@@ -6,15 +6,25 @@ Drones as a great data collection tool, coupled with Machine Learning techniques
 of wildlife conservation challenges.
 
 
-**Object Detection using Neural Network and Plotly Dash**
+# Object Detection using Neural Network and Plotly Dash
+
 The goal is to use an Object detection API to identify the animal in the drone video stream.
 Classify species of animals based on images coming from drone streams. Automatically help identify animals in the wild taken by wildlife conservatories. The dashboard where the objects of interest are detected is shown below.
 ![](images/krstmodel.png)
 
-**Installation and Usage**
-    Install all dependencies listed in requirements.txt
-     - $ pip install -r requirements.txt
-    Run app.py to launch a local Dash server to host the Dash app. A link will appear in your console; click this to use the Dash app.
+# Installation and Usage
+
+First, install all dependencies listed in requirements.txt
+
+* Clone the repo and cd into the krst_objectDetection directory
+
+* $ pip install -r requirements.txt
+
+Run app.py script to launch a local Dash server to host the Dash app. 
+
+* python app.py
+
+* A link will appear in your console; Navigate to http://0.0.0.0:8050 on a browser tab to see the results.
 
 **Method**
 
